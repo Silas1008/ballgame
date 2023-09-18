@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'montserrat', sans-serif;
+  background: lightcyan;
+  overflow: hidden;
+}
+.app {
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+header h1 {
+  margin: 50px 0px 30px 0;
+  text-align: center;
+  font-size: 40px;
+}
+header p {
+  font-size: 20px;
+}
+
+.balls {
+  /* animation: fall 5s infinite; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  position: absolute;
+  top: -107px;
+  left: 0;
+  right: 0;
+}
+
+.ball1 {
+  position: relative;
+  /* left: -500%; */
+  transform: translate(-50);
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  /* background: -webkit-radial-gradient(left bottom, rgb(11, 0, 255) 100px, rgb(196, 220, 255)); */
+  background: -webkit-radial-gradient(left bottom, rgb(251, 255, 0) 100px, rgb(196, 220, 255));
+  animation-delay: 10s;
+  animation: fall 5s infinite;
+}
+.ball2 {
+  position: relative;
+  /* left: -100%; */
+  transform: translate(-50);
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  /* background: -webkit-radial-gradient(left bottom, rgb(11, 0, 255) 100px, rgb(196, 220, 255)); */
+  background: -webkit-radial-gradient(left bottom, rgb(11, 0, 255) 100px, rgb(196, 220, 255));
+  animation-delay: 4s;
+  animation: fall 7s infinite;
+}
+.ball3 {
+  position: relative;
+  /* left: -300%; */
+  transform: translate(-50);
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  /* background: -webkit-radial-gradient(left bottom, rgb(11, 0, 255) 100px, rgb(196, 220, 255)); */
+  background: -webkit-radial-gradient(left bottom, rgb(255, 0, 0) 100px, rgb(196, 220, 255));
+  animation-delay: 1s;
+  animation: fall 8s infinite;
+}
+.ball4 {
+  position: relative;
+  /* left: -50%; */
+  transform: translate(-50);
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  /* background: -webkit-radial-gradient(left bottom, rgb(11, 0, 255) 100px, rgb(196, 220, 255)); */
+  background: -webkit-radial-gradient(left bottom, rgb(255, 0, 149) 100px, rgb(196, 220, 255));
+  animation-delay: 5s;
+  animation: fall 9s infinite;
+}
+.ball5 {
+  position: relative;
+  /* right: -150%; */
+  transform: translate(-50);
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  /* background: -webkit-radial-gradient(left bottom, rgb(11, 0, 255) 100px, rgb(196, 220, 255)); */
+  background: -webkit-radial-gradient(left bottom, rgb(0, 255, 234) 100px, rgb(196, 220, 255));
+  animation-delay: 3s;
+  animation: fall 10s infinite;
+}
+.ball6 {
+  position: relative;
+  /* right: -250%; */
+  transform: translate(-50);
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  /* background: -webkit-radial-gradient(left bottom, rgb(11, 0, 255) 100px, rgb(196, 220, 255)); */
+  background: -webkit-radial-gradient(left bottom, rgb(153, 0, 255) 100px, rgb(196, 220, 255));
+  animation-delay: 2s;
+  animation: fall 11s infinite;
+}
+.ball7 {
+  position: relative;
+  /* right: -500%; */
+  transform: translate(-50);
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  /* background: -webkit-radial-gradient(left bottom, rgb(11, 0, 255) 100px, rgb(196, 220, 255)); */
+  background: -webkit-radial-gradient(left bottom, rgb(255, 136, 0) 100px, rgb(196, 220, 255));
+  animation-delay: 9s;
+  animation: fall 12s infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
